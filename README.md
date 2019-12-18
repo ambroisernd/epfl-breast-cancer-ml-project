@@ -10,10 +10,10 @@ This Gihub contains all the code and the notebooks used for our experiments.
 
 ## Dependencies
 
-- numpy==1.17.2
-- pandas==0.25.1
-- scikit-learn==0.21.3
-- matplotlib==3.1.1
+- numpy==`1.17.2`
+- pandas==`0.25.1`
+- scikit-learn==`0.21.3`
+- matplotlib==`3.1.1`
 
 ## Dataset
 
