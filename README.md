@@ -35,8 +35,8 @@ Other options:
 
 The prediction obtained with the different models can be generated using `generate_prediction.py` script with the following options:
 
-- `python preprocessing.py --model all`: This option will produce prediction for all algorithms implemented in different CSV files.
-- `python preprocessing.py --model your_model`: This option will produce prediction for a specific algorithm (*your_model*) in a CSV files.
+- `python generate_prediction.py --model all`: This option will produce prediction for all algorithms implemented in different CSV files.
+- `python generate_prediction.py --model your_model`: This option will produce prediction for a specific algorithm (*your_model*) in a CSV files.
 
 Other options:
 
