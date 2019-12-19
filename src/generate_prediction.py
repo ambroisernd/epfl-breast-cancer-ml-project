@@ -9,6 +9,10 @@ from sklearn.ensemble  import RandomForestClassifier
 from sklearn.linear_model  import LogisticRegression
 from sklearn.decomposition import PCA
 
+def features_expert():
+    df = pd.read_csv("../data/important_genes.csv", sep=",")
+    return list(df["value"].unique())
+
 def features_to_keep():
     df_important_genes = pd.read_csv("../data/important_genes.csv", sep=",")
     important_genes = list(df_important_genes["value"].unique())
@@ -19,12 +23,12 @@ def features_to_keep():
     return [gene for gene in important_genes if gene in genes_test]
     
 
-def load_dataset(path_dataset, training=True):
-    
+def load_dataset(path_dataset, training=True, features=None):
     # Open CSV
     df = pd.read_csv(path_dataset, sep=",")
     # Keep only common features
-    features = features_to_keep()
+    if features is None:
+        features = features_to_keep()
     X = df[features].values
     
     if training:
