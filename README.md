@@ -7,7 +7,9 @@ One promising way to estimate human cells receptivity to hormones is to analyse 
 In this document, we present a set of machine learning algorithms and features selection techniques to classify human cells implanted into mice according to their hormone receptivity by using only their gene expression.
 According to the results of our study, we show that this method can be used to classify patient's cells receptivity to hormones.
 
-This Gihub contains all the code and the notebooks used for our experiments.
+This Github contains all the code and the notebooks used for our experiments.
+
+Final report can be found [here](report/final_report.pdf).
 
 
 ## Dependencies
